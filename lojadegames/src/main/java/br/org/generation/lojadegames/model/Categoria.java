@@ -23,7 +23,7 @@ public class Categoria {
 	private Long id;
 	
 	@NotBlank
-	@Size(max=1000, message="Este campo é obrigatório com mínimo de 5 e máximo de 1000 caracteres.")
+	@Size(max=100, message="Este campo é obrigatório, máximo de 1000 caracteres.")
 	private String tipo;
 	
 	@OneToMany(mappedBy = "categoria", cascade = CascadeType.ALL)

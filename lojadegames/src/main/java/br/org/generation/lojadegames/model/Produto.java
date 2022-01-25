@@ -25,11 +25,11 @@ public class Produto {
 	private Long id;
 	
 	@NotBlank
-	@Size(max=1000, message="O campo nome é obrigatório com máximo de 1000 caracteres.")
+	@Size(max=100, message="O campo nome é obrigatório com máximo de 100 caracteres.")
 	private String nome;
 	
 	@NotBlank
-	@Size(max=1000, message="O campo Tipo Console é obrigatório com mínimo de 5 e máximo de 1000 caracteres.")
+	@Size(max=100, message="O campo Tipo Console é obrigatório, máximo de 100 caracteres.")
 	private String tipoconsole;
 	
 	@NotBlank(message="Este campo é obrigatório.")
