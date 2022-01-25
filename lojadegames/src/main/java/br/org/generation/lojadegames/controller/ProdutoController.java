@@ -54,7 +54,7 @@ public class ProdutoController {
 	@PostMapping
 	public ResponseEntity <Produto> postProduto(@Valid @RequestBody Produto produto){
 		return categoriaRepository.findById(produto.getCategoria().getId())
-				.map(resposta -> ResponseEntity.status(HttpStatus.CREATED).body(produtoRepository.save(produto)))
+				.map(res -> ResponseEntity.status(HttpStatus.CREATED).body(produtoRepository.save(produto)))
 				.orElse(ResponseEntity.badRequest().build());
 	}
 	

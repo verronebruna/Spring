@@ -11,6 +11,7 @@ import javax.persistence.Id;
 import javax.persistence.ManyToOne;
 import javax.persistence.Table;
 import javax.validation.constraints.NotBlank;
+import javax.validation.constraints.NotNull;
 import javax.validation.constraints.Size;
 
 import com.fasterxml.jackson.annotation.JsonFormat;
@@ -28,14 +29,14 @@ public class Produto {
 	@Size(max=100, message="O campo nome é obrigatório com máximo de 100 caracteres.")
 	private String nome;
 	
-	@NotBlank
+	@NotBlank(message="Este campo é obrigatório.")
 	@Size(max=100, message="O campo Tipo Console é obrigatório, máximo de 100 caracteres.")
 	private String tipoconsole;
 	
-	@NotBlank(message="Este campo é obrigatório.")
-	@JsonFormat(shape = JsonFormat.Shape.STRING)
+	@NotNull(message="Este campo é obrigatório.")
 	private BigDecimal preco;
 	
+	@NotNull(message="Este campo é obrigatório.")
 	@Column(name = "data_lancamento")
 	@JsonFormat(pattern = "yyyy-MM-dd")
     private LocalDate dataLancamento;
