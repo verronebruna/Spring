@@ -24,11 +24,11 @@ public class Postagem {
 	private Long id;
 	
 	@NotBlank(message = "O atributo título é Obrigatório e não pode utilizar espaços em branco!") 
-	@Size(min = 5, max = 100, message = "O atributo título deve conter no mínimo 5 e no máximo 100 caracteres.")
+	@Size(max = 100, message = "O atributo título deve conter no máximo 100 caracteres.")
 	private String titulo;
 	
 	@NotBlank(message = "O atributo texto é obrigatório")
-	@Size(min = 5, max = 1000, message = "O atributo texto deve conter no mínimo 5 e no máximo 1000 caracteres.")
+	@Size(max = 1000, message = "O atributo texto deve conter no máximo 1000 caracteres.")
 	private String texto;
 	
 	@UpdateTimestamp

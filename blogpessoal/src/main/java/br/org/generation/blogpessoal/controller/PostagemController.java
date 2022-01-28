@@ -41,7 +41,7 @@ public class PostagemController {
 				.orElse(ResponseEntity.notFound().build());
 	}
 	
-	@GetMapping("idifalse/{id}")
+	@GetMapping("idfalse/{id}")
 	public ResponseEntity<Postagem> getByIdIfElse(@PathVariable long id) {
 
 		Optional<Postagem> postagem = postagemRepository.findById(id);
