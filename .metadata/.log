@@ -2961,3 +2961,81 @@ java.util.concurrent.TimeoutException
 
 !ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-02-01 08:54:13.801
 !MESSAGE ClasspathListenerHandler removeClasspathListener sts4.classpath.EViHDCTB => OK
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-02-01 09:03:38.164
+!MESSAGE Entering DelegatingStreamConnectionProvider()
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-02-01 09:03:38.177
+!MESSAGE DelegatingStreamConnectionProvider classloader = org.eclipse.osgi.internal.loader.EquinoxClassLoader@64774339[org.springframework.tooling.boot.ls:1.29.0.202112031705(id=564)]
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-02-01 09:03:38.178
+!MESSAGE SpringBootLanguageServer exists!
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-02-01 09:03:46.432
+!MESSAGE Boot LS startup time from start to initialized: 8247ms
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-02-01 09:03:46.720
+!MESSAGE ClasspathListenerHandler addClasspathListener sts4.classpath.wHUTrJifisBatched = true
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-02-01 09:03:46.721
+!MESSAGE Setting up ClasspathListenerManager
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-02-01 09:03:46.723
+!MESSAGE Scheduling initial event for all projects ...
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-02-01 09:03:46.725
+!MESSAGE Scheduling initial event for all projects DONE
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-02-01 09:03:46.725
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-02-01 09:03:46.726
+!MESSAGE ClasspathListenerHandler addClasspathListener sts4.classpath.wHUTrJif => OK
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-02-01 09:03:46.746
+!MESSAGE classpath=100 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-02-01 09:03:46.759
+!MESSAGE buffering callback sts4.classpath.wHUTrJif blogpessoal false 100
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-02-01 09:03:46.762
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-02-01 09:03:46.777
+!MESSAGE classpath=94 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-02-01 09:03:46.787
+!MESSAGE buffering callback sts4.classpath.wHUTrJif farmaciadagalera false 94
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-02-01 09:03:46.789
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-02-01 09:03:46.803
+!MESSAGE classpath=94 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-02-01 09:03:46.811
+!MESSAGE buffering callback sts4.classpath.wHUTrJif geracaoeco false 94
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-02-01 09:03:46.812
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-02-01 09:03:46.822
+!MESSAGE classpath=72 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-02-01 09:03:46.827
+!MESSAGE buffering callback sts4.classpath.wHUTrJif helloworld false 72
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-02-01 09:03:46.829
+!MESSAGE exists = true open = true => deleted = false
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-02-01 09:03:46.841
+!MESSAGE classpath=100 entries
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-02-01 09:03:46.849
+!MESSAGE buffering callback sts4.classpath.wHUTrJif lojadegames false 100
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-02-01 09:03:46.852
+!MESSAGE executing callback sts4.classpath.wHUTrJif 5 batched events
+
+!ENTRY org.springframework.tooling.ls.eclipse.commons 1 0 2022-02-01 09:03:48.514
+!MESSAGE executing callback sts4.classpath.wHUTrJif SUCCESS [done]
