@@ -25,7 +25,7 @@ import br.org.generation.lojadegames.repository.CategoriaRepository;
 @CrossOrigin(origins ="*",allowedHeaders="*")
 public class CategoriaController {
 	
-	@Autowired
+	@Autowired 
 	private CategoriaRepository categoriaRepository;
 	
 	@GetMapping
@@ -55,12 +55,14 @@ public class CategoriaController {
 	@PutMapping
 	public ResponseEntity <Categoria> putCategoria (@Valid @RequestBody Categoria categoria){
 		return categoriaRepository.findById(categoria.getId())
-				.map(res -> ResponseEntity.ok(categoriaRepository.save(categoria)))
-				.orElse(ResponseEntity.notFound().build());
-	}
+				.map(res -> {
+				return ResponseEntity.ok().body(categoriaRepository.save(categoria));
+	})
+	.orElse(ResponseEntity.notFound().build());
+}
 	
 	@DeleteMapping("/{id}")
-	public ResponseEntity <?> deleteCategoria(@PathVariable Long id){
+	public ResponseEntity<?> deleteCategoria(@PathVariable Long id){
 		return categoriaRepository.findById(id)
 				.map(res -> {
 						categoriaRepository.deleteById(id);

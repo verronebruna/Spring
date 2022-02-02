@@ -26,7 +26,7 @@ public class Produto {
 	private Long id;
 	
 	@NotBlank
-	@Size(max=100, message="O campo nome é obrigatório com máximo de 100 caracteres.")
+	@Size(max=100, message="O campo nome é obrigatório com máximo de 100 caracteres!")
 	private String nome;
 	
 	@NotBlank(message="Este campo é obrigatório.")

@@ -27,10 +27,10 @@ import br.org.generation.lojadegames.repository.ProdutoRepository;
 @CrossOrigin(origins ="*",allowedHeaders="*")
 public class ProdutoController {
 	
-	@Autowired /*Produto*/
+	@Autowired 
 	private ProdutoRepository produtoRepository;
 
-	@Autowired /*Categoria*/
+	@Autowired 
 	private CategoriaRepository categoriaRepository;
 	
 	@GetMapping

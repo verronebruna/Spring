@@ -18,7 +18,7 @@ import br.org.generation.lojadegames.repository.UsuarioRepository;
 
 @Service
 public class UsuarioService {
-	
+
 	@Autowired
 	private UsuarioRepository usuarioRepository;
 	
@@ -91,9 +91,7 @@ public class UsuarioService {
 	}
 	
 	private boolean compararSenhas(String senhaDigitada, String senhaBanco) {
-		
 		BCryptPasswordEncoder encoder = new BCryptPasswordEncoder();
-		
 		return encoder.matches(senhaDigitada, senhaBanco);
 
 	}
@@ -111,4 +109,5 @@ public class UsuarioService {
 		return Period.between(dataNasc, LocalDate.now()).getYears();
 				
 	}
+
 }

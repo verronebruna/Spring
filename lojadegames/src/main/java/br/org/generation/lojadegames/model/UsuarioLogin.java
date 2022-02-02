@@ -8,8 +8,9 @@ public class UsuarioLogin {
 		private String nome;
 		private String usuario;
 		private String senha;
-		private LocalDate dataNasci;
+		private LocalDate dataNasc;
 		private String token;
+		
 		public Long getId() {
 			return id;
 		}
@@ -34,11 +35,11 @@ public class UsuarioLogin {
 		public void setSenha(String senha) {
 			this.senha = senha;
 		}
-		public LocalDate getDataNasci() {
-			return dataNasci;
+		public LocalDate getDataNasc() {
+			return dataNasc;
 		}
-		public void setDataNasci(LocalDate dataNasci) {
-			this.dataNasci = dataNasci;
+		public void setDataNasc (LocalDate dataNasc) {
+			this.dataNasc = dataNasc;
 		}
 		public String getToken() {
 			return token;
@@ -46,6 +47,4 @@ public class UsuarioLogin {
 		public void setToken(String token) {
 			this.token = token;
 		}
-		
-		
 }

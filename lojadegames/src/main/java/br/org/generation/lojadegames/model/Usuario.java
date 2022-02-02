@@ -34,7 +34,7 @@ public class Usuario {
 	@Size(min = 8, message = "A Senha deve ter no mínimo 8 caracteres")
 	private String senha;
 	
-	@Column(name="data_nascimento")
+	@Column(name="dataNasc")
 	@JsonFormat(pattern = "yyyy-MM-dd")
 	@NotNull(message = "O atributo Data de Nascimento é obrigatório")
 	private LocalDate dataNasc;
@@ -46,7 +46,9 @@ public class Usuario {
 		this.senha=senha;
 		this.dataNasc=dataNasc;
 	}
-
+	
+	public Usuario () {}
+	
 	public Long getId() {
 		return id;
 	}
@@ -86,6 +88,4 @@ public class Usuario {
 	public void setDataNasc(LocalDate dataNasc) {
 		this.dataNasc = dataNasc;
 	}
-	
-	
 }
