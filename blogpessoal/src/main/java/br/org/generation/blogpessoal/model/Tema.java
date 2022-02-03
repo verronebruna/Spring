@@ -9,7 +9,7 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.OneToMany;
 import javax.persistence.Table;
-import javax.validation.constraints.NotBlank;
+import javax.validation.constraints.NotNull;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 
@@ -17,11 +17,11 @@ import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 @Table(name ="tb_temas")
 public class Tema {
 	
-	@Id
+		@Id
 		@GeneratedValue(strategy = GenerationType.IDENTITY)
 		private Long id;
 	
-		@NotBlank(message = "O atributo Descrição é obrigatório e não pode conter espaços em branco.")
+		@NotNull(message = "O atributo Descrição é obrigatório e não pode conter espaços em branco.")
 		private String descricao;
 		
 		@OneToMany(mappedBy = "tema", cascade = CascadeType.ALL)
@@ -51,7 +51,4 @@ public class Tema {
 		public void setPostagem(List<Postagem> postagem) {
 			this.postagem = postagem;
 		}
-		
-		
-		
 }

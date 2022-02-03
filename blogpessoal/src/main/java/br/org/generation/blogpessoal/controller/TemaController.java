@@ -31,13 +31,12 @@ public class TemaController {
 	@GetMapping
 	public ResponseEntity<List<Tema>> getAll(){
 		return ResponseEntity.ok(temaRepository.findAll());
-		
 	}
 	
 	@GetMapping("/{id}")
 	public ResponseEntity<Tema> getById(@PathVariable Long id) {
 		return temaRepository.findById(id)
-			.map(resposta -> ResponseEntity.ok(resposta))
+			.map(res -> ResponseEntity.ok(res))
 			.orElse(ResponseEntity.notFound().build());
 	}
 	
@@ -59,7 +58,6 @@ public class TemaController {
 					return ResponseEntity.ok().body(temaRepository.save(tema));
 				})
 				.orElse(ResponseEntity.notFound().build());
-
 	}
 	
 	@DeleteMapping("/{id}")

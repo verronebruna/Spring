@@ -37,7 +37,7 @@ public class PostagemController {
 	@GetMapping("/{id}")
 	public ResponseEntity<Postagem> getById(@PathVariable Long id){
 		return postagemRepository.findById(id)
-				.map(resposta -> ResponseEntity.ok(resposta))
+				.map(res -> ResponseEntity.ok(res))
 				.orElse(ResponseEntity.notFound().build());
 	}
 	
@@ -65,7 +65,7 @@ public class PostagemController {
 	public ResponseEntity<Postagem> putPostagem(@Valid @RequestBody Postagem postagem){
 		
 		return postagemRepository.findById(postagem.getId())
-				.map(resposta -> ResponseEntity.ok(postagemRepository.save(postagem)))
+				.map(res -> ResponseEntity.ok(postagemRepository.save(postagem)))
 				.orElse(ResponseEntity.notFound().build());
 	}
 	
@@ -73,7 +73,7 @@ public class PostagemController {
 	public ResponseEntity<?> deletePostagem(@PathVariable Long id){
 		
 		return postagemRepository.findById(id)
-				.map(resposta -> {
+				.map(res -> {
 					postagemRepository.deleteById(id);
 					return ResponseEntity.status(HttpStatus.NO_CONTENT).build();
 				})
