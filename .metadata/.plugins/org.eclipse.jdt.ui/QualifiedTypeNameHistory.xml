@@ -42,10 +42,12 @@
     <fullyQualifiedTypeName name="org.springframework.stereotype.Repository"/>
     <fullyQualifiedTypeName name="java.time.LocalDate"/>
     <fullyQualifiedTypeName name="org.apache.commons.codec.binary.Base64"/>
-    <fullyQualifiedTypeName name="java.util.Optional"/>
     <fullyQualifiedTypeName name="java.nio.charset.Charset"/>
-    <fullyQualifiedTypeName name="java.util.List"/>
     <fullyQualifiedTypeName name="io.swagger.v3.oas.models.info.Info"/>
     <fullyQualifiedTypeName name="io.swagger.v3.oas.models.responses.ApiResponses"/>
     <fullyQualifiedTypeName name="io.swagger.v3.oas.models.responses.ApiResponse"/>
+    <fullyQualifiedTypeName name="java.util.List"/>
+    <fullyQualifiedTypeName name="org.junit.jupiter.api.Order"/>
+    <fullyQualifiedTypeName name="java.util.Optional"/>
+    <fullyQualifiedTypeName name="org.springframework.http.HttpMethod"/>
 </qualifiedTypeNameHistroy>
